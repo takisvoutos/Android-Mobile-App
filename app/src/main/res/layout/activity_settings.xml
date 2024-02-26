@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".SettingsActivity">
+
+    <include android:id="@+id/settings_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="652dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="0dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/settings_profile_image"
+               android:layout_width="250dp"
+               android:layout_height="250dp"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/profile">
+           </de.hdodenhof.circleimageview.CircleImageView>
+
+           <EditText
+               android:id="@+id/settings_status"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_profile_image"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="8dp"
+               android:layout_marginRight="40dp"
+               android:background="@drawable/inputs"
+               android:hint="profile status"
+               android:padding="30dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+
+           <EditText
+               android:id="@+id/settings_username"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_status"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="30dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="username"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_profile_fullname"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_username"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="profile name"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_country"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_profile_fullname"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="country"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_age"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_country"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="Age"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_gender"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_age"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="Gender"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_hobby"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_gender"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="Hobby"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_smoking"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_hobby"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="Smoking"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_plastic"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_smoking"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="Plastic Usage"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <EditText
+               android:id="@+id/settings_recycle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_plastic"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/inputs"
+               android:hint="Recycle"
+               android:padding="12dp"
+               android:textColor="@color/cardview_dark_background"
+               android:textSize="20sp"
+               android:textStyle="bold">
+           </EditText>
+
+           <Button
+               android:id="@+id/update_account_settings_buttons"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_below="@id/settings_recycle"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginBottom="20dp"
+               android:background="@drawable/button"
+               android:backgroundTint="#FFFFFF"
+               android:text="Update Account Settings"
+               android:textAllCaps="false"
+               android:textColor="#44AF53"
+               android:textSize="20sp"
+               android:textStyle="bold">
+
+           </Button>
+
+
+       </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

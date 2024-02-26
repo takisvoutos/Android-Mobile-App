@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".PostActivity">
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/select_post_image"
+        android:layout_width="306dp"
+        android:layout_height="243dp"
+        android:layout_above="@+id/post_description"
+        android:layout_below="@+id/update_post_page_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="23dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/Tags"
+
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type text here..."
+        android:inputType="textMultiLine"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/Tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/update_post_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="187dp"
+        android:text="Tags"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSelectTags"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#FFFFFF"
+        android:text="Select Post Tags"
+        android:textColor="#44AF53" />
+
+    <TextView
+        android:id="@+id/selected_feelings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:text="How you feel about it?"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/feelings_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginBottom="115dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#FFFFFF"
+        android:text="Feeling"
+        android:textColor="#44AF53">
+
+    </Button>
+
+    <Button
+        android:id="@+id/update_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:text="Update Post"
+        android:textColor="#44AF53"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

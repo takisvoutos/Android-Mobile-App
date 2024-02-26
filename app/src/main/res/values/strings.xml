@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Our Planet</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string-array name="tags_items">
+        <item>Water</item>
+        <item>Forrest</item>
+        <item>Atmosphere</item>
+        <item>Fire</item>
+        <item>Mountain</item>
+        <item>Sea</item>
+        <item>Lake</item>
+        <item>Animals</item>
+        <item>Politics</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="groups">Groups</string>
+    <string name="users">Users</string>
+    <string name="token">pk.eyJ1IjoidGFraXN2b3V0b3MiLCJhIjoiY2tpN2xzMDZyMGVsNDJ4czA5azl6eG9mbyJ9.-wtvCytMW7ZiEj6__q88eg</string>
+</resources>

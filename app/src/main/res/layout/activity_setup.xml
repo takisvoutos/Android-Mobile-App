@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".SetupActivity">
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setup_profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <EditText
+                android:id="@+id/setup_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_profile_image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/username"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Username"
+                android:inputType="textMultiLine"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/setup_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_username"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/name"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Full Name"
+                android:inputType="textMultiLine"
+                android:padding="14dp" />
+
+
+            <EditText
+                android:id="@+id/setup_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_fullname"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/name"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Country"
+                android:inputType="textMultiLine"
+                android:padding="14dp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_country"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp">
+
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/setup_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGender"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/name"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Age"
+                android:inputType="textMultiLine"
+                android:padding="14dp" />
+
+            <EditText
+                android:id="@+id/setup_hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_age"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/inputs"
+                android:drawableLeft="@drawable/name"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Hobby"
+                android:inputType="textMultiLine"
+                android:padding="14dp" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="178dp"
+                android:layout_height="64dp"
+                android:layout_above="@+id/radioPlastic"
+                android:layout_below="@+id/setup_hobby"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="Are you smoking?"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioSmoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_hobby"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp">
+
+                <RadioButton
+                    android:id="@+id/Smoker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+
+                <RadioButton
+                    android:id="@+id/nonSmoker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="187dp"
+                android:layout_height="102dp"
+                android:layout_above="@+id/radioRecycle"
+                android:layout_below="@+id/radioSmoking"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="-33dp"
+                android:text="Are you using disposable plastics?"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioPlastic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioSmoking"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp">
+
+                <RadioButton
+                    android:id="@+id/plasticUsage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/nonPlasticUsage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:text="Do you recycle??"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioRecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioPlastic"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp">
+
+                <RadioButton
+                    android:id="@+id/recycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/noRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/setup_information_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioRecycle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#FFFFFF"
+                android:padding="14dp"
+                android:text="Save"
+                android:textColor="#44AF53"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="511dp"
+                android:text="Gender: "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
