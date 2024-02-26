@@ -18,5 +18,5 @@ EcoSocial is a mobile app for Android devices that serves as a social network wi
 - **Location-Based Reminders:** Users receive environment-related reminders and tips based on their location, promoting eco-friendly habits (e.g., "Avoid using plastic bags" near the sea).
 
 ## About the Author
-This project was conducted as part of undergraduate thesis in Department of Infomatics (University of Piraeus). 
+This project was conducted as part of undergraduate thesis in Department of Infomatics - University of Piraeus (2021). 
 
